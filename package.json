@@ -1,0 +1,43 @@
+{
+  "name": "similarweb-gds-referrals",
+  "version": "3.0.0",
+  "description": "SimilarWeb connector for Google Data Studio - Referrals",
+  "main": "Code.js",
+  "scripts": {
+    "clasp-login": "clasp login",
+    "new-script": "cd src;rimraf .clasp.json;clasp create --type standalone --title \"SimilarWeb Connector - Referrals\";clasp push -f;npm run open;cd -",
+    "push": "cd src;clasp push;cd -",
+    "push:force": "cd src;clasp push -f;cd -",
+    "open": "cd src;clasp open;cd -",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [
+    "similarweb",
+    "google",
+    "data",
+    "studio",
+    "gds",
+    "connector"
+  ],
+  "author": "Gregory Fryns",
+  "license": "MIT",
+  "homepage": "https://www.similarweb.com",
+  "devDependencies": {
+    "@google/clasp": "^2.1.0",
+    "@types/google-apps-script": "0.0.53",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-googleappsscript": "^1.0.2",
+    "eslint-plugin-jest": "^22.6.4",
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gregoryfryns/similarweb-gds-referrals.git"
+  }
+}
